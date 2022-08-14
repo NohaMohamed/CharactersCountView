@@ -12,7 +12,7 @@ enum CharchtersCountViewType{
     case remaining
 }
 
-class CharchtersCountView: UIView ,NibLoadable{
+public class CharchtersCountView: UIView ,NibLoadable{
     //MARK: Outlets
     @IBOutlet weak var viewTitleLabel: UILabel!
     @IBOutlet weak var slashLabel: UILabel!
