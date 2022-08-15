@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum CharchtersCountViewType{
+public enum CharchtersCountViewType{
     case typed
     case remaining
 }
@@ -19,7 +19,7 @@ public class CharchtersCountView: UIView ,NibLoadable{
     @IBOutlet weak var charchtersCountLabel: UILabel!
     @IBOutlet weak var totalCount: UILabel!
     
-    var viewType: CharchtersCountViewType?{
+    public var viewType: CharchtersCountViewType?{
         didSet{
             switch viewType {
                 case .remaining:
@@ -29,11 +29,11 @@ public class CharchtersCountView: UIView ,NibLoadable{
             }
         }
     }
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         loadNibContent()
     }
-    func setText(_ str: Int) {
-        charchtersCountLabel.text = "\(str)"
+    public func setCharchtersCounts(_ count: Int) {
+        charchtersCountLabel.text = "\(count)"
     }
 }
