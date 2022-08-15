@@ -41,7 +41,7 @@ extension NibLoadable where Self: UIView {
     }
     private func loadViewFromNib() -> UIView? {
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: Self.nibName, bundle: bundle)
+        let nib = UINib(nibName: Self.nibName, bundle: Bundle.module)
         return nib.instantiate(withOwner: self, options: nil).first as? UIView
     }
 }
