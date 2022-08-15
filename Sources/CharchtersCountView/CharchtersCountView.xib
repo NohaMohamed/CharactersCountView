@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharchtersCountView" customModule="CharchtersCountView">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharchtersCountView" customModuleProvider="target">
             <connections>
                 <outlet property="charchtersCountLabel" destination="kxZ-an-HxF" id="YAY-mI-jdU"/>
                 <outlet property="slashLabel" destination="vke-ez-t42" id="co5-i8-1iT"/>
