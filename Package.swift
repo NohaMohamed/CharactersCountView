@@ -21,8 +21,5 @@ let package = Package(
         .target(
             name: "CharchtersCountView",
             dependencies: []),
-        .testTarget(
-            name: "CharchtersCountViewTests",
-            dependencies: ["CharchtersCountView"]),
     ]
 )
