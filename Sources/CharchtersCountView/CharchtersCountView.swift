@@ -39,6 +39,9 @@ public class CharchtersCountView: UIView {
     public func setCharchtersCounts(_ count: Int) {
         charchtersCountLabel.text = "\(count)"
     }
+    public func setTotalCounts(_ count: Int) {
+        totalCount.text = "\(count)"
+    }
     func loadNibContent() {
         guard let view = loadViewFromNib() else { return }
         view.frame = bounds
