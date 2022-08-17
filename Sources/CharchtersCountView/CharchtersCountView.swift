@@ -36,10 +36,10 @@ public class CharchtersCountView: UIView {
     public func setTitle(_ title: String){
         viewTitleLabel.text = title
     }
-    public func setCharchtersCounts(_ count: Int) {
+    public func setCharchtersCount(_ count: Int) {
         charchtersCountLabel.text = "\(count)"
     }
-    public func setTotalCounts(_ count: Int) {
+    public func setTotalCount(_ count: Int) {
         totalCount.text = "\(count)"
     }
     func loadNibContent() {
